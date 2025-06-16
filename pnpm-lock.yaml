@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@carlgo11/fake-person':
+        specifier: ^0.0.4
+        version: 0.0.4
       '@hono/node-server':
         specifier: ^1.14.4
         version: 1.14.4(hono@4.7.11)
@@ -35,6 +38,9 @@ importers:
         version: 5.8.3
 
 packages:
+
+  '@carlgo11/fake-person@0.0.4':
+    resolution: {integrity: sha512-vkyXWJBSN6hdT8LisJCZ2WTX3lC1x1JRXCJXAlkF/LQfPcDanX4KbcSLVxDNm/hTuUH46PbbLowP9JD+uEobDQ==}
 
   '@esbuild/aix-ppc64@0.25.5':
     resolution: {integrity: sha512-9o3TMmpmftaCMepOdA5k/yDw8SfInyzWWTjYTFCX3kPSDJMROQTb8jg+h9Cnwnmm1vOzvxN7gIfB5V2ewpjtGA==}
@@ -186,6 +192,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@faker-js/faker@9.8.0':
+    resolution: {integrity: sha512-U9wpuSrJC93jZBxx/Qq2wPjCuYISBueyVUGK7qqdmj7r/nxaxwW8AQDCLeRO7wZnjj94sh3p246cAYjUKuqgfg==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+
   '@hono/node-server@1.14.4':
     resolution: {integrity: sha512-DnxpshhYewr2q9ZN8ez/M5mmc3sucr8CT1sIgIy1bkeUXut9XWDkqHoFHRhWIQgkYnKpVRxunyhK7WzpJeJ6qQ==}
     engines: {node: '>=18.14.1'}
@@ -245,6 +255,10 @@ packages:
     resolution: {integrity: sha512-hbP9FpSZf7pkS7hRVUrOjhwKJNyampPgtXKc3AN6DsWtoHsg2Sb4SQaS4Tcay380zSwd2VPo9G9180emBACp5g==}
 
 snapshots:
+
+  '@carlgo11/fake-person@0.0.4':
+    dependencies:
+      '@faker-js/faker': 9.8.0
 
   '@esbuild/aix-ppc64@0.25.5':
     optional: true
@@ -320,6 +334,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.5':
     optional: true
+
+  '@faker-js/faker@9.8.0': {}
 
   '@hono/node-server@1.14.4(hono@4.7.11)':
     dependencies:

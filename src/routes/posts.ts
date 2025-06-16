@@ -1,9 +1,9 @@
 import { zValidator } from '@hono/zod-validator'
-import { getFullPostBySlug, getPosts } from 'best-blog-data'
-import { Hono } from 'hono'
-import { z } from 'zod/v4-mini'
+import { getPosts, getFullPostBySlug } from 'best-blog-data'
+import z from 'zod'
+import app from '../app.js'
 
-const posts_route = new Hono()
+const posts_route = app
 	.get('/all', (c) => {
 		const posts = getPosts()
 		return c.json({
