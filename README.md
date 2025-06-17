@@ -4,8 +4,9 @@ This project is a starter template for building a server-client application usin
 
 ## Project Structure
 
+- **src/app.ts**: Defines the main application using Hono.
 - **src/index.ts**: Sets up the server using Hono and defines the routes.
-- **src/routes.ts**: Contains the route definitions for handling post-related requests.
+- **src/routes**: Contains the route definitions for handling requests.
 - **src/client.ts**: Provides a client setup for consuming the API endpoints.
 - **tsconfig.json**: TypeScript configuration file.
 - **package.json**: Project dependencies and scripts.
@@ -66,6 +67,7 @@ This will compile the TypeScript files into JavaScript in the `dist` directory.
 ## API Endpoints
 
 - **GET /**: Returns a simple "Hello Hono!" message.
+- **GET /user/me**: Fetches user data.
 - **GET /posts/all**: Fetches all posts.
 - **GET /posts/id:slug**: Fetches a specific post by slug.
 
